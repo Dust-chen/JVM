@@ -180,6 +180,9 @@
   1. 区分概念：内存泄漏memory leak，内存溢出out of memory
   2. java -XX:+PrintCommandLineFlags HelloGC
   3. java -Xmn10M -Xms40M -Xmx60M -XX:+PrintCommandLineFlags -XX:+PrintGC  HelloGC
+  
+     -Xmn：新生代大小，-Xms最小堆内存，-Xmx:最大堆内存，一般设置为一样，防止弹性伸缩浪费系统计算资源
+     
      PrintGCDetails PrintGCTimeStamps PrintGCCauses
   4. java -XX:+UseConcMarkSweepGC -XX:+PrintCommandLineFlags HelloGC
   5. java -XX:+PrintFlagsInitial 默认参数值
